@@ -38,9 +38,9 @@ class TicTacToeButton(discord.ui.Button["TicTacToe"]):
         winner = view.check_board_winner()
         if winner is not None:
             if winner == view.X:
-                content = "X won!"
+                content = "**X won!**"
             elif winner == view.O:
-                content = "O won!"
+                content = "**O won!**"
             else:
                 content = "It's a tie!"
 
