@@ -645,15 +645,15 @@ class Games(commands.Cog):
             await ctx.send("Time's Up! :stopwatch:")
         else:
             await ctx.send(
-                f"**:man_in_tuxedo_tone1:\t{reaction.emoji}\n:robot:\t{bot_emoji}**"
+                f"**:man_in_tuxedo_tone1:\t{reaction.emoji} vs :robot:\t{bot_emoji}**"
             )
             # if conds
             if str(reaction.emoji) == bot_emoji:
                 await ctx.send("**It's a Tie :ribbon:**")
             elif check_win(str(reaction.emoji), bot_emoji):
-                await ctx.send("**You win :sparkles:**")
+                await ctx.send("**You win! :sparkles:**")
             else:
-                await ctx.send("**I win :robot:**")
+                await ctx.send("**You lost :robot:**")
 
 
 def setup(bot):
