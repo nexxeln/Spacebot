@@ -614,7 +614,7 @@ class Games(commands.Cog):
         """Play Rock, Paper, Scissors game"""
 
         def check_win(p, b):
-            if p == "🌑":
+            if p == "🪨":
                 return False if b == "📄" else True
             if p == "📄":
                 return False if b == "✂" else True
@@ -622,7 +622,7 @@ class Games(commands.Cog):
             return False if b == "🌑" else True
 
         async with ctx.typing():
-            reactions = ["🌑", "📄", "✂"]
+            reactions = ["🪨", "📄", "✂"]
             game_message = await ctx.send(
                 "**Rock Paper Scissors**\nChoose your shape:", delete_after=15.0
             )
@@ -634,7 +634,7 @@ class Games(commands.Cog):
             return (
                 user != self.bot.user
                 and user == ctx.author
-                and (str(reaction.emoji) == "🌑" or "📄" or "✂")
+                and (str(reaction.emoji) == "🪨" or "📄" or "✂")
             )
 
         try:
