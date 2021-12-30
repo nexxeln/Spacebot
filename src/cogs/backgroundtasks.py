@@ -38,9 +38,9 @@ class BackgroundTasks(commands.Cog):
             or "suicide" in message.content.lower()
         ):
             em = discord.Embed(
-                colour=discord.Colour.dark_red(),
+                colour=discord.Colour.purple(),
                 title="Suicide is no joke!",
-                description="""There are people who care for you... and suicide is not a solution for ANYTHING.
+                description="""There are people who care for you! Suicide is never a solution.
             \nPlease go to this website for suicide helpline. """,
                 url="http://www.suicide.org",
             )
