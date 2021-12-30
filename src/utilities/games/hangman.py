@@ -175,4 +175,4 @@ async def play(bot, ctx):
             await guess_msg.edit(content=images[turns])
             if turns == 0:
                 await word_msg.edit(content=f"**{word}**")
-                return await ctx.send("You Loose :x:")
+                return await ctx.send("You lose :x:")
