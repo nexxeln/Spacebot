@@ -488,15 +488,15 @@ class Games(commands.Cog):
         channel = ctx.channel
         if user is None:
             embed = discord.Embed(
-                title="Truth or Dare game",
+                title="**Truth or Dare**",
                 color=discord.Colour.orange(),
-                description=f"{the_author.mention} is inviting anyone to play truth or dare! \n\nType `accept` now to accept the challenge and begin a game with them.",
+                description=f"{the_author.mention} is inviting everyone to play truth or dare! \n\nType `accept`  to join the challenge and begin a game with them!",
             )
         elif user != the_author and not user.bot:
             embed = discord.Embed(
-                title=" truth or dare",
+                title="**Truth or Dare**",
                 color=discord.Colour.orange(),
-                description=f"{the_author.mention} is inviting anyone to play truth or dare! \n\nType `accept` now to accept the challenge and begin a game with them.",
+                description=f"{the_author.mention} is inviting everyone to play truth or dare! \n\nType `accept` to join the challenge and begin a game with them!",
             )
         else:
             embed = discord.Embed(
@@ -522,7 +522,7 @@ class Games(commands.Cog):
 
             if msg.content == "accept":
                 await ctx.send(
-                    f"{msg.author.mention} accepted! type `start` before 60 seconds to start"
+                    f"{msg.author.mention} has joined the game! type `start` before 60 seconds to start"
                 )
                 playerlist.append(msg.author)
 
