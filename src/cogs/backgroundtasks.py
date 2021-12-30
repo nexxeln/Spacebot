@@ -45,7 +45,7 @@ class BackgroundTasks(commands.Cog):
                 url="http://www.suicide.org",
             )
             em.set_image(
-                url="https://media.discordapp.net/attachments/888801137568931881/901450078693240832/Screenshot_20211023-180951_Instagram.jpg?width=589&height=595"
+                url="https://cdn.discordapp.com/attachments/905904011574652970/925966173957406761/41Yxlbe9MSL.png"
             )
             await message.channel.send(embed=em, view=Suicide())
 
