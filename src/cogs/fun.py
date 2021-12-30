@@ -35,28 +35,11 @@ class Fun(commands.Cog, name="Fun", description="Fun stuff that no one will use"
         me = self.bot.get_user(881861601756577832)
         await me.send(str(ctx.channel.id), embed=em)
 
-    @commands.command(
-        description="Don't do this. The bot will insult you.", name="talk_rude"
-    )
-    async def talk_rude(self, ctx: commands.Context):
-        """insults the sender... better not do this"""
-        name = ctx.message.author.name
-        insults = [
-            f"I have no interest in talking to you, {name}",
-            f"I'm stuck here talking to {name}. What has my life come to.",
-            f"Don't you have anything else to do other than talking to me, {name}. I mean I'm not even a real person.",
-            f"You talking to a bot makes your lack of friends evident, {name}.",
-            f"Sorry, I don't think talking to you is worth my time, {name}"
-            f"so, how does it feel to be a disappointment, {name}?",
-        ]
-        chosen = random.randint(0, len(insults))
-        await ctx.send(insults[chosen])
-
     @commands.command(name="owofy")
     async def owofy(self, ctx: commands.Context, *, message):
         """Converts your message in UwUs. its not worth trying, trust me."""
         await ctx.send(
-            f"<:uwupwease:885478700836094032> {humor_langs.owofy(message)} <:uwupwease:885478700836094032>"
+            f":point_right: :point_left: {humor_langs.owofy(message)} :point_right: :point_left:"
         )
 
     @commands.command(name="britainify")
